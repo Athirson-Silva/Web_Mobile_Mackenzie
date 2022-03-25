@@ -1,0 +1,83 @@
+/* variáveis */
+:root{                                               /* seletor de estado ':', estado natural 'root' */
+    --backgroundColor: #2d2d2d;
+    --fontColor: #e6e4e4;
+}
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+/* reset */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* estilos básicos */
+*{
+    font-family: 'Lato', sans-serif;
+    color: var(--fontColor);
+}
+
+body{
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2d2d2d;
+}
+
+div{
+    border-radius: 30px;
+    background: linear-gradient(225deg, #146e1c, #115d17);
+    box-shadow:  -14px 14px 28px #0f5315,
+             14px -14px 28px #177b1f;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+button{
+    margin-top: 12px;
+	padding: 4px 8px;
+ 	border-radius: 10px;
+ 	background: white;
+ 	width: 180px;
+    color:#2d2d2d;
+}
+
+input{	
+ 	border-radius: 10px;
+ 	background: white;
+    color:#2d2d2d;
+}
+label{
+    position: absolute;
+}
+#btn_lembrarsenha{
+    position: relative;
+    bottom: 28px;
+    height: 70px;
+}
+#btn_login{
+    position: relative;
+    bottom: 15px;
+}
+
+/* mobile */
+*{
+    font-size: 20pt;
+    text-align: center;
+}
+
+@media only screen and (min-width: 920px){
+    *{
+        font-size: 14pt;
+    }
+}
